@@ -57,6 +57,7 @@ const ContactForm = () => {
             placeholder="Email"
           />
         </Row>
+
         <Row>
           {/* <label htmlFor="nameInput" className='form-label p-0'>Enter First & Last Name</label> */}
           <input
@@ -71,9 +72,10 @@ const ContactForm = () => {
         </Row>
         <Row>
           <a href="mailto:brittyoung_treece@protonmail.com" className="p-0">
-            <Button variant="outline-light">Submit</Button>{" "}
+            <Button variant="outline-light">Send</Button>{" "}
           </a>
         </Row>
+
         <FloatingLabel controlId="floatingTextarea2" label="Message">
           <Form.Control
             as="textarea"
