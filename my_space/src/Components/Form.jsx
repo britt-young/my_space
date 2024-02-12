@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Row } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 // Helper function to check if the email is valid
 import { validateEmail } from '../utils/helpers';
@@ -70,7 +71,7 @@ const ContactForm = () => {
         </Row>
         <Row>
           <a href='mailto:brittyoung_treece@protonmail.com' className='p-0'>
-            <button className='m-0' type="submit">Submit</button>
+          <Button variant="outline-light">Submit</Button>{' '}
           </a>
         </Row>
       </form>
