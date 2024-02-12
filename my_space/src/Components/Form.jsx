@@ -1,16 +1,16 @@
-import React from 'react'
-import { useState } from 'react';
-import { Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+import React from "react";
+import { useState } from "react";
+import { Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 // Helper function to check if the email is valid
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from "../utils/helpers";
 
 const ContactForm = () => {
   // Create state variables for input field and initialize them to empty strings
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Get the value and name of user input that triggered change
@@ -19,9 +19,9 @@ const ContactForm = () => {
     const inputValue = target.value;
 
     // Set state to email, name, or none based on the input type
-    if (inputType === 'email') {
+    if (inputType === "email") {
       setEmail(inputValue);
-    } else if (inputType === 'name') {
+    } else if (inputType === "name") {
       setName(inputValue);
     }
   };
@@ -32,14 +32,14 @@ const ContactForm = () => {
 
     // Check if the input is empty and/or valid. If not, set an error message
     if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
+      setErrorMessage("Email is invalid");
       // Return to stop the code from running
       return;
-        }
+    }
 
     // Clear fields after form is submitted
-    setName('');
-    setEmail('');
+    setName("");
+    setEmail("");
   };
 
   return (
@@ -47,9 +47,9 @@ const ContactForm = () => {
       <form className="form" onSubmit={handleFormSubmit}>
         <Row>
           {/* <label htmlFor="emailInput" className='form-label p-0'>Enter your email address</label> */}
-          <input 
-            className='form-control mb-3'
-            id='emailInput'
+          <input
+            className="form-control mb-3"
+            id="emailInput"
             value={email}
             name="email"
             onChange={handleInputChange}
@@ -60,8 +60,8 @@ const ContactForm = () => {
         <Row>
           {/* <label htmlFor="nameInput" className='form-label p-0'>Enter First & Last Name</label> */}
           <input
-            className='form-control mb-3'
-            id='nameInput'
+            className="form-control mb-3"
+            id="nameInput"
             value={name}
             name="name"
             onChange={handleInputChange}
@@ -70,10 +70,17 @@ const ContactForm = () => {
           />
         </Row>
         <Row>
-          <a href='mailto:brittyoung_treece@protonmail.com' className='p-0'>
-          <Button variant="outline-light">Submit</Button>{' '}
+          <a href="mailto:brittyoung_treece@protonmail.com" className="p-0">
+            <Button variant="outline-light">Submit</Button>{" "}
           </a>
         </Row>
+        <FloatingLabel controlId="floatingTextarea2" label="Message">
+          <Form.Control
+            as="textarea"
+            placeholder="Type your message here"
+            style={{ height: "100px" }}
+          />
+        </FloatingLabel>
       </form>
       {errorMessage && (
         <div>

@@ -9,9 +9,11 @@ function App() {
   return (
     <>
     <Navbar />
-    <main>
-      
-    </main>
+    <Header/>
+    {/* Displays content defined by URL route  */}
+    <main className="mx-3">
+        <Outlet />
+      </main>
     </>
   )
 };
