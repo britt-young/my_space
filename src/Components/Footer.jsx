@@ -8,8 +8,8 @@ const styles = {
         justifyContent: 'center'
     },
     imgStyles:{
-        width: '50px',
-        height: '50px'
+        width: '20px',
+        height: '20px'
     }
 }
 
@@ -21,21 +21,21 @@ const Footer = () => {
         className="m-3"
         style={styles.imgStyles}
       >
-        <img src="./assets/github.png" alt="GitHub Icon" />;
+        <img src="src\assets\github.png" alt="GitHub Icon" />
       </a>
       <a
         href="https://www.linkedin.com/in/brittney-young-a1962a228/"
         className="m-3"
         style={styles.imgStyles}
       >
-        <img src="./assets/linkedin.png" alt="LinkedIn Icon" />;
+        <img src="src\assets\linkedin.png" alt="LinkedIn Icon" />
       </a>
       <a
         href="https://stackoverflow.com/"
         className="m-3"
         style={styles.imgStyles}
       >
-        <img src="./assets/stack-overflow.png" alt="StackOverflow Icon" />;
+        <img src="src\assets\stack-overflow.png" alt="StackOverflow Icon" />
       </a>
     </footer>
   );

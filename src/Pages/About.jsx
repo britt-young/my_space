@@ -20,12 +20,12 @@ const About = () => {
         <img
           style={styles.portraitStyle}
           className="portrait"
-          src="./assets/britt.png"
+          src="src\assets\britt.png"
           alt="Brittney Treece"
         />
       </div>
       <div className="p-2">
-        <h3 className="intro-title">introduction</h3>
+        <h3 className="intro-title">INTRODUCTION</h3>
         <h2 className="title">Full Stack Web Developer</h2>
         <p className="hook">
           and recent graduate of The University of Utah Full Stack Coding
