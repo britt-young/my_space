@@ -1,0 +1,43 @@
+.custom-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.custom-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding: 15px;
+}
+
+h1 {
+  margin: 3px;
+  
+}
+
+.custom-btn{
+    border: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #353535;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.custom-btn:hover {
+    background-color: #767676;
+  }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import { Row, Button, FloatingLabel, Form} from "react-bootstrap";
+
 
 // Helper function to check if the email is valid
 import { validateEmail } from "../utils/helpers";

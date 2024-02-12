@@ -3,15 +3,21 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 function Navigation () {
+  const styles = {
+    navStyle:{
+      width:'100%!important',
+    }
+  }
+
   return (
-    <div className='nav-area'>
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <div>
+    <Navbar expand="lg" className="bg-body-tertiary" style={styles.navStyle}>
       <Container>
-        <Navbar.Brand href="#home">BT.</Navbar.Brand>
+        <Navbar.Brand href="#about">BT.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+          <Nav  className="me-auto">
+            <Nav.Link href="#about">Home</Nav.Link>
             <Nav.Link href="#about">About Me</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
             <Nav.Link href="#contact">Contact Me</Nav.Link>
