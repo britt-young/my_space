@@ -1,45 +1,52 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
 
 const styles = {
-    footerStyles:{
-        minHeight: '100px',
-        background: '#595959',
-        display: 'flex',
-        justifyContent: 'center'
-    },
-    imgStyles:{
-        width: '20px',
-        height: '20px'
-    }
-}
+  footerStyles: {
+    minHeight: "100px",
+    background: "#353535",
+    display: "flex",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+  },
+ linkStyles: { 
+ } 
+};
 
 const Footer = () => {
   return (
     <footer style={styles.footerStyles} className="p-3 mt-5">
       <a
         href="https://github.com/britt-young"
+        style={styles.linkStyles}
         className="m-3"
-        style={styles.imgStyles}
       >
-        <img src="src\assets\github.png" alt="GitHub Icon" />
+        <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
         href="https://www.linkedin.com/in/brittney-young-a1962a228/"
+        style={styles.linkStyles}
         className="m-3"
-        style={styles.imgStyles}
       >
-        <img src="src\assets\linkedin.png" alt="LinkedIn Icon" />
+        <FontAwesomeIcon icon={faLinkedin} />
       </a>
       <a
         href="https://stackoverflow.com/"
+        style={styles.linkStyles}
         className="m-3"
-        style={styles.imgStyles}
       >
-        <img src="src\assets\stack-overflow.png" alt="StackOverflow Icon" />
+        <FontAwesomeIcon icon={faStackOverflow} />
       </a>
     </footer>
   );
-}
+};
 
 export default Footer;
-

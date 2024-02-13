@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Form from '../Components/Form'
 
+
 const Contact = () => {
   return (
     <div>
