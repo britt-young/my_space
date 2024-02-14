@@ -1,13 +1,12 @@
 import React from "react";
 import About from "../Components/About";
-import Footer from "../Components/Footer";
+import Projects from "../Components/Projects";
 
 const Home = () => {
   return (
     <div>
       <About/>
-      
-      <Footer/>
+      <Projects/>
     </div>
   )
 }
