@@ -25,19 +25,17 @@ h1 {
 }
 
 .custom-btn{
-    border: 1px;
-    border-radius: 4px;
-    margin-top: 10px;
-    padding: 2px;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #353535;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 30px;
+  margin-top: 2%;
+  text-align: center;
+  box-shadow: 0 0 5px 0 #ffffff;
+  color: black;
+  background-color: #FD12FF!important
 }
 
 .custom-btn:hover {
-    background-color: #767676;
-  }
+  background-color: #767676;
+}

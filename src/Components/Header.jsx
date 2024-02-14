@@ -6,8 +6,8 @@ import Col from 'react-bootstrap/Col';
 const Header = () => {
 
   const colStyle = {
-    backgroundColor: '#ed0d75',
-    minHeight: '30px'
+    backgroundColor: 'white',
+    minHeight: '10px',
   };
 
   return (
