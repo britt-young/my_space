@@ -19,9 +19,13 @@ main {
 }
 
 #contact-form {
+    background-color:rgba(72, 72, 72, 0.4); ;
     width: 100%;
     padding: 5% 2%;
     text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #ffffff;
 }
 
 #contact-form div,
@@ -33,6 +37,7 @@ main {
 }
 
 #contact-form Button {
+    margin-top: 2%;
     text-align: center;
     box-shadow: 0 0 5px 0 #ffffff;
     color: black;
