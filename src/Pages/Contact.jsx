@@ -9,7 +9,7 @@ const Contact = () => {
         <Container>
           <h1>Connect with me!</h1>
           <p>
-            Please complete the contact form below for inquiries. I will get back to you as soon as possible.
+          Please feel free to contact us about any questions or concerns you may have. You can email us directly at <b>brittyoung_treece@protonmail.com</b> or fill out our form below:
           </p>
           <Form/>
         </Container>

@@ -1,96 +1,52 @@
 import React from "react";
-import { useState } from "react";
-import { Row, Button, FloatingLabel, Form} from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import emailjs from '@emailjs/browser';
+import "./Styles/Form.css";
 
 
-// Helper function to check if the email is valid
-import { validateEmail } from "../utils/helpers";
+const Contact = () => {
 
-const ContactForm = () => {
-  // Create state variables for input field and initialize them to empty strings
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleInputChange = (e) => {
-    // Get the value and name of user input that triggered change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
-
-    // Set state to email, name, or none based on the input type
-    if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "name") {
-      setName(inputValue);
-    }
-  };
-
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (page refresh)
-    e.preventDefault();
-
-    // Check if the input is empty and/or valid. If not, set an error message
-    if (!validateEmail(email)) {
-      setErrorMessage("Email is invalid");
-      // Return to stop the code from running
-      return;
-    }
-
-    // Clear fields after form is submitted
-    setName("");
-    setEmail("");
-  };
+  const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY);
+      alert("Your message has been sent!")
+      let frm = document.getElementById('contact-form');
+      frm.reset();
+  }
 
   return (
-    <div className="container">
-      <form className="form" onSubmit={handleFormSubmit}>
-        <Row>
-          {/* <label htmlFor="emailInput" className='form-label p-0'>Enter your email address</label> */}
-          <input
-            className="form-control mb-3"
-            id="emailInput"
-            value={email}
-            name="email"
-            onChange={handleInputChange}
-            type="email"
-            placeholder="Email"
-          />
-        </Row>
+      <>
+          <main className="contact-page">
+              <Container className='mt-5'>
+                  <form id="contact-form" onSubmit={sendEmail}>
+                      <div className="col-md-4 mb-3">
+                          <label htmlFor="validationDefault01">Your Name</label>
+                          <input type="text" className="form-control" id="validationDefault01" placeholder="Your name" required name="from_name" />
+                      </div>
 
-        <Row>
-          {/* <label htmlFor="nameInput" className='form-label p-0'>Enter First & Last Name</label> */}
-          <input
-            className="form-control mb-3"
-            id="nameInput"
-            value={name}
-            name="name"
-            onChange={handleInputChange}
-            type="text"
-            placeholder="First & Last Name"
-          />
-        </Row>
-        <Row>
-          <a href="mailto:brittyoung_treece@protonmail.com" className="p-0">
-            <Button variant="outline-light">Send</Button>{" "}
-          </a>
-        </Row>
+                      <div className="col-md-4 mb-3">
+                          <label htmlFor="validationDefault02">Email Address</label>
+                          <input type="email" className="form-control" id="validationDefault02" placeholder="Enter email" required name="email_from" />
+                      </div>
+                      <div className="col-md-4 mb-3">
+                          <label htmlFor="validationDefault03">Subject</label>
+                          <input type="text" className="form-control" id="validationDefault03" placeholder="Subject" name="subject" />
+                      </div>
 
-        <FloatingLabel controlId="floatingTextarea2" label="Message">
-          <Form.Control
-            as="textarea"
-            placeholder="Type your message here"
-            style={{ height: "100px" }}
-          />
-        </FloatingLabel>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="alert alert-danger my-3">{errorMessage}</p>
-        </div>
-      )}
-    </div>
+                      <div className="col-md-4 mb-3">
+                          <label htmlFor="validationDefault04">Your Message</label>
+                          <textarea type="text-area" className="form-control" id="validationDefault04" placeholder="Your Message" required name="message" />
+                      </div>
+                      <Button variant="light" type="submit">Submit</Button>
+                  </form>
+              </Container>
+
+          </main>
+      </>
+
   );
 };
 
-export default ContactForm;
+export default Contact;
+

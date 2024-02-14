@@ -1,0 +1,42 @@
+body {
+    background-color: rgba(34, 34, 33, 0.4);
+    height: 100%;
+    min-height: 100vh;
+}
+
+main {
+    padding: 2%;
+    font-family: "Anton", sans-serif;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.info {
+    width: 100%;
+    max-width: 700px;
+    margin: 2% auto;
+}
+
+#contact-form {
+    width: 100%;
+    padding: 5% 2%;
+    text-align: center;
+}
+
+#contact-form div,
+#contact-form Button {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+#contact-form Button {
+    text-align: center;
+    box-shadow: 0 0 5px 0 #ffffff;
+    color: black;
+    background-color: #FD12FF!important
+}
+
+
