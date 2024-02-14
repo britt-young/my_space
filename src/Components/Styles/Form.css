@@ -6,7 +6,7 @@ body {
 
 main {
     padding: 2%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Inconsolata", monospace;
     width: 100%;
     max-width: 1000px;
     margin: auto;
@@ -31,11 +31,12 @@ main {
 }
 
 #contact-form Button {
+    font-family: inherit;
     margin-top: 2%;
     text-align: center;
     box-shadow: 0 0 5px 0 #ffffff;
     color: black;
-    background-color: #FD12FF!important
+    background-color: #c7649b!important
 }
 
 

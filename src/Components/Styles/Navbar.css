@@ -1,10 +1,10 @@
 .nav {
-    font-family: 'Open sans', sans-serif;
+    font-family: "Inconsolata", monospace;
     font-size: 20px;
     display: flex;
     align-items: center;
     padding: 0 20px;
-    background-color: #2c2b2c!important;
+    background-color: #383345!important;
 }
 
 .nav a {
@@ -13,6 +13,6 @@
 
 .nav-link-active {
     text-decoration: underline;
-    text-decoration-color: #454545;
+    text-decoration-color: #e1da5f;
     text-underline-offset: 5px;
 }

@@ -1,16 +1,14 @@
 :root {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Inconsolata", monospace;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #2c2b2c;
-
+  background-color: #383345;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 
 a.active{
   font-weight: 700!important;
@@ -30,7 +28,7 @@ body {
   display: block;
   min-width: 320px;
   min-height: 100vh;
-  color: #ffffff;
+  color: white;
 }
 
 .error-text{

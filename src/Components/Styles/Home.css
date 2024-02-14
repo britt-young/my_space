@@ -21,7 +21,21 @@
 
 h1 {
   margin: 3px;
-  
+  color: #e1da5f;
+  line-height: 0.9;
+}
+
+h2 {
+  margin: 0;
+  color: #e1da5f;
+  line-height: 0.9;
+}
+
+p {
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.5;
+
 }
 
 .custom-btn{
@@ -33,9 +47,9 @@ h1 {
   text-align: center;
   box-shadow: 0 0 5px 0 #ffffff;
   color: black;
-  background-color: #FD12FF!important
+  background-color: #c7649b!important
 }
 
-.custom-btn:hover {
+/* .custom-btn:hover {
   background-color: #767676;
-}
+} */
