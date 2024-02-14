@@ -2,24 +2,25 @@ import {useLocation} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import {logo} from '../assets/logo-icon.png';
+import logo from '../assets/logo-icon.png';
+import './Styles/Navbar.css';
 
 function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
+      <Container className='nav'>
         <Navbar.Brand href="/">
-          {/* <img
+          <img
             src={logo}
             alt="Logo"
-            width="200"
+            width="100"
             height="100"
             className="d-inline-block align-text-top"
-          /> */}
+          />
         </Navbar.Brand>
-        <Navbar.Toggle className="navbar-light bg-light" aria-controls="responsive-navbar-nav" />
+        
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className={currentPage === '/' ? 'nav-link-active' : 'nav-link'}>Home</Nav.Link>
