@@ -1,3 +1,17 @@
+body {
+  background-color: #22222166;
+  height: 100%;
+  min-height: 100vh;
+}
+
+main {
+  padding: 2%;
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
 .custom-container {
   width: 100%;
   max-width: 1200px;
@@ -14,7 +28,7 @@
 .custom-col {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   flex: 1;
   padding: 15px;
 }
