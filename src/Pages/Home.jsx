@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "../Components/Styles/About.css";
+import "../Components/Styles/Home.css";
 import {  useNavigate  } from "react-router-dom";
 
 const styles = {
@@ -14,7 +14,6 @@ const About = () => {
   const handleButtonClick = () => {
 navigate("/contact");
   };
-
 
   return (
     <Container className='custom-container' fluid>

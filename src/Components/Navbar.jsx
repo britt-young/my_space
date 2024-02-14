@@ -23,8 +23,7 @@ function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/" className={currentPage === '/' ? 'nav-link-active' : 'nav-link'}>Home</Nav.Link>
-            <Nav.Link href="/about" className={currentPage === '/about' ? 'nav-link-active' : 'nav-link'}>About Me</Nav.Link>
-            <Nav.Link href="/candles" className={currentPage === '/portfolio' ? 'nav-link-active' : 'nav-link'}>Portfolio</Nav.Link>
+            <Nav.Link href="/portfolio" className={currentPage === '/portfolio' ? 'nav-link-active' : 'nav-link'}>Portfolio</Nav.Link>
             <Nav.Link href="/contact" className={currentPage === '/contact' ? 'nav-link-active' : 'nav-link'}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,9 +1,7 @@
 :root {
-  font-family: "Anton", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -30,7 +28,6 @@ a {
 body {
   margin: 0;
   display: block;
-  background-color: #262626;
   min-width: 320px;
   min-height: 100vh;
   color: #ffffff;

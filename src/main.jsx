@@ -5,7 +5,7 @@ import './index.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import About from './Pages/About.jsx';
+import Home from './Pages/Home.jsx';
 import Contact from './Pages/Contact.jsx';
 import Portfolio from './Pages/Portfolio.jsx';
 import Resume from './Pages/Resume.jsx';
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <About />,
+        element: <Home />,
       },
       {
         path: 'contact',
