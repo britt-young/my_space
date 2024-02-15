@@ -9,7 +9,7 @@ import {
 const styles = {
   footerStyles: {
     minHeight: "100px",
-    background: "#353535",
+    background: "#383345",
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
