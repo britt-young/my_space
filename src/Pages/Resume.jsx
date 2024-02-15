@@ -1,8 +1,11 @@
 import React from 'react'
+import Quals from '../Components/Quals'
 
 const Resume = () => {
   return (
-    <div>Resume</div>
+    <div>
+      <Quals/>
+    </div>
   )
 }
 

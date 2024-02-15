@@ -2,7 +2,11 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import "../Components/Styles/Projects.css";
 import TCC from "../assets/TahananCCo.png";
-import TTB from "../assets/";
+import TTB from "../assets/tech-tidbits.png";
+import WD from "../assets/Weather-Dashboard.png";
+import SS from "../assets/SightScene.png";
+import Horiseon from "../assets/Horiseon.png";
+import GYLT from "../assets/GYLT.png";
 
 const Projects = () => {
   return (
@@ -27,7 +31,7 @@ const Projects = () => {
 
         <div>
           <Card style={{ width: "18rem", padding: "10px" }}>
-            <Card.Img style={{ width: "18rem"}} variant="top" src={{TTB}} />
+            <Card.Img style={{ width: "18rem"}} variant="top" src={TTB} />
             <Card.Body>
               <Card.Title>Tech-Tidbits</Card.Title>
             </Card.Body>
@@ -39,7 +43,7 @@ const Projects = () => {
         </div>
         <div>
           <Card style={{ width: "18rem", padding: "10px" }}>
-            <Card.Img style={{ width: "18rem"}} variant="top" src="holder.js/100px180?text=Image cap" />
+            <Card.Img style={{ width: "18rem"}} variant="top" src={WD} />
             <Card.Body>
               <Card.Title>Weather Dashboard</Card.Title>
             </Card.Body>
@@ -51,7 +55,7 @@ const Projects = () => {
         </div>
         <div>
           <Card style={{ width: "18rem", padding: "10px" }}>
-            <Card.Img style={{ width: "18rem"}} variant="top" src="holder.js/100px180?text=Image cap" />
+            <Card.Img style={{ width: "18rem"}} variant="top" src={SS} />
             <Card.Body>
               <Card.Title>Sight Scene</Card.Title>
             </Card.Body>
@@ -63,7 +67,7 @@ const Projects = () => {
         </div>
         <div>
           <Card style={{ width: "18rem", padding: "10px" }}>
-            <Card.Img style={{ width: "18rem"}} variant="top" src="holder.js/100px180?text=Image cap" />
+            <Card.Img style={{ width: "18rem"}} variant="top" src={GYLT} />
             <Card.Body>
               <Card.Title>Get Your List Together</Card.Title>
             </Card.Body>
@@ -75,7 +79,7 @@ const Projects = () => {
         </div>
         <div>
           <Card style={{ width: "18rem", padding: "10px" }}>
-            <Card.Img style={{ width: "18rem"}} variant="top" src="holder.js/100px180?text=Image cap" />
+            <Card.Img style={{ width: "18rem"}} variant="top" src={Horiseon} />
             <Card.Body>
               <Card.Title>Horizon</Card.Title>
             </Card.Body>

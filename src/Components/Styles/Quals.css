@@ -1,0 +1,18 @@
+ {
+    background-color:  #383345;
+    border: none;
+    color: #e1da5f;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

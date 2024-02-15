@@ -26,6 +26,7 @@ function Navigation() {
             <Nav.Link href="/" className={currentPage === '/' ? 'nav-link-active' : 'nav-link'}>Home</Nav.Link>
             <Nav.Link href="/portfolio" className={currentPage === '/portfolio' ? 'nav-link-active' : 'nav-link'}>Portfolio</Nav.Link>
             <Nav.Link href="/contact" className={currentPage === '/contact' ? 'nav-link-active' : 'nav-link'}>Contact</Nav.Link>
+            <Nav.Link href="/resume" className={currentPage === '/resume' ? 'nav-link-active' : 'nav-link'}>Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
