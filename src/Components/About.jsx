@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../Components/Styles/Home.css";
 import { useNavigate } from "react-router-dom";
+import britt from "../assets/britt.png";
 
 const styles = {
   portraitStyle: {
@@ -26,7 +27,7 @@ const About = () => {
             <img
               style={styles.portraitStyle}
               className="portrait"
-              src="src\assets\britt.png"
+              src={britt}
               alt="Brittney Treece"
             />
             <Button className="custom-btn" onClick={handleButtonClick}>
